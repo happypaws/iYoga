@@ -16,12 +16,14 @@
         set you love the most. We ensure that every single class will give you a feeling of warmth, comfort and happiness.</p>
 </div>
 
-    <div>
+<div>
         <p><h4>Our Studio address is:</h4></p>
-        <p><h5>12 Bridge Street, </h5></p>
-        <p><h5>Gort, Co Galway </h5></p>
-        <p><h5>G56 VF12</h5></p>
-    </div>
+        <p><b>12 Bridge Street,</b></p>
+        <p><b>Gort, Co Galway,</p>
+        <p><b>G56 VF12</b></p>
+        <p><h4>Contact number:</h4></p>
+        <p><b>+3533333333</b></p>
+</div>
 
 <div>
     <div style="width: 100%">
@@ -30,7 +32,7 @@
     </div>
 </div>
 
-  <!-- End page content -->
+<!-- End page content -->
 
 </div>
 </body>
