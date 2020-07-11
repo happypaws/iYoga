@@ -9,15 +9,15 @@
 
 <div class="w3-row-padding">
   <div class="w3-half">
-      <img id="pics" src="img/yoga11.jpeg" style="width:100%" onclick="onClick(this)" alt="yoga mat">
-      <img id="pics" src="img/yoga99.jpeg" style="width:100%" onclick="onClick(this)" alt="yoga mat">
-      <img id="pics" src="img/yoga33.jpeg" style="width:100%" onclick="onClick(this)" alt="lotus pose">
+      <img id="modal01" src="img/yoga11.jpeg" style="width:100%" onclick="onClick(this)" alt="yoga mat">
+      <img id="modal01" src="img/yoga99.jpeg" style="width:100%" onclick="onClick(this)" alt="yoga mat">
+      <img id="modal01" src="img/yoga33.jpeg" style="width:100%" onclick="onClick(this)" alt="lotus pose">
   </div>
 
   <div class="w3-half">
-      <img id="pics" src="img/yoga44.jpeg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img id="pics" src="img/yoga55.jpeg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
-      <img id="pics" src="img/yoga66.jpeg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+      <img id="modal01" src="img/yoga44.jpeg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img id="modal01" src="img/yoga55.jpeg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img id="modal01" src="img/yoga66.jpeg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
   </div>
 </div>
 
