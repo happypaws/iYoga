@@ -13,7 +13,7 @@
   
 <div class="w3-row-padding w3-grayscale">
   <div class="w3-col m4 w3-margin-bottom">
-    <div class="w3-light-grey">
+    <div>
       <img src="img/irina.jpeg" alt="Irina photo" style="width:100%">
         <div class="w3-container">
           <h3>Irina Lungu</h3>
@@ -29,7 +29,7 @@
     </div>
   </div>
     <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
+      <div>
         <img src="img/elena.jpeg" alt="Elena photo" style="width:100%">
           <div class="w3-container">
             <h3>Elena Ovcearenco</h3>
