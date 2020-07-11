@@ -9,15 +9,15 @@
 
 <div class="w3-row-padding">
   <div class="w3-half">
-      <img src="img/yoga1.jpeg" style="width:100%" onclick="onClick(this)" alt="yoga mat">
-      <img src="img/yoga9.jpeg" style="width:100%" onclick="onClick(this)" alt="yoga mat">
-      <img src="img/yoga3.jpeg" style="width:100%" onclick="onClick(this)" alt="lotus pose">
+      <img src="img/yoga11.jpeg" style="width:100%" onclick="onClick(this)" alt="yoga mat">
+      <img src="img/yoga99.jpeg" style="width:100%" onclick="onClick(this)" alt="yoga mat">
+      <img src="img/yoga33.jpeg" style="width:100%" onclick="onClick(this)" alt="lotus pose">
   </div>
 
   <div class="w3-half">
-      <img src="img/yoga4.jpeg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="img/yoga5.jpeg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
-      <img src="img/yoga6.jpeg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+      <img src="img/yoga44.jpeg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="img/yoga55.jpeg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="img/yoga66.jpeg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
   </div>
 </div>
 
