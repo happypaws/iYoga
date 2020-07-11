@@ -1,5 +1,4 @@
 <?php
-
 $message_sent = false;
 
 function test_inputForm($inputForm){
@@ -14,7 +13,7 @@ function test_inputForm($inputForm){
             $subject = test_inputForm($_POST['subject']);
             $message = test_inputForm($_POST['message']);
     
-            $mailTo = "eovcearenco@hubspot.com";
+            $mailTo = "lena.ovcearenco@gmail.com";
             $headers = "From: ".$mailFrom;
             $txt = "You have received an e-mail from ".$name.".\n\n".$message;
     

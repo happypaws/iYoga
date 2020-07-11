@@ -3,14 +3,15 @@
 ?>
 
 <?php
-$message_sent = false; //global variable to set default as false to check if either the message was sent from the user or not
-function test_inputForm($inputForm){
+    
+    $message_sent = false; //global variable to set default as false to check if either the message was sent from the user or not
+    
+    function test_inputForm($inputForm){
     $inputForm = htmlspecialchars(stripcslashes(strip_tags($inputForm)));
     return $inputForm;
-}
+    }
     if (isset($_POST['form-submit'])){
-
-        if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){   //validating the email format is right
+        if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){ //validating the email format is right
             $name = test_inputForm($_POST['name']);
             $mailFrom = test_inputForm($_POST['email']);
             $subject = test_inputForm($_POST['subject']);
@@ -26,20 +27,23 @@ function test_inputForm($inputForm){
     }
 ?>
 
-  <?php
+<?php
     if($message_sent):
-  ?>
+?>
     <div><img src="img/namaste.jpg" alt = "namaste girl and cat" width = "500px" height = "500px" style="margin: 0 0 0 250;"></div>
     <h3 style="vertical-align:middle;margin:0 0 0 250; color: orchid;"><b>Thank you, Your message was successfully sent!</b></h3>
   
-  <?php 
+<?php 
     else:
-  ?>
-      <!-- Contact Form-->
-      <div class="w3-container" id="contact" style="margin-top:10px">
-          <h1 class="w3-xxxlarge w3-text-orchid"><b>Contact</b></h1>
-          <hr style="width:50px;border:5px solid orchid" class="w3-round">
-          <p>Do you want to ask us anything? Please fill out the form and send it to us, we will reply asap!</p>
+?>
+
+<!-- Contact Form-->
+
+  <div class="w3-container" id="contact" style="margin-top:10px">
+      <h1 class="w3-xxxlarge w3-text-orchid"><b>Contact</b></h1>
+      <hr style="width:50px;border:5px solid orchid" class="w3-round">
+      <p>Do you want to ask us anything? Please fill out the form and send it to us, we will reply asap!</p>
+          
           <form action="contact.php" method ="post">
             <div class="w3-section">
               <label>Name</label>
@@ -61,13 +65,14 @@ function test_inputForm($inputForm){
             <div class="w3-section">
             </div>
           </form>  
-      </div>
+  </div>
   
 <?php
   endif;
 ?>
 
 <!-- End page content -->
+
 </div>
 </body>
 </main>
