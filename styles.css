@@ -26,3 +26,6 @@ body {
 .session{
     margin: 350 30 30 30;
 }
+input:focus{
+    outline:orchid auto 1px !important;
+}
