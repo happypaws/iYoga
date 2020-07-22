@@ -5,6 +5,9 @@ body,h1,h2,h3,h4,h5 {
 body {
     font-size:16px;
 }
+input:focus{
+    outline:orchid auto 1px !important;
+}
 .w3-half img{
     margin-bottom:-6px;
     margin-top:16px;
@@ -14,7 +17,6 @@ body {
 .w3-half img:hover{
     opacity:1
 }
-
 .error{
     color: red;
     margin: auto;
@@ -26,6 +28,4 @@ body {
 .session{
     margin: 350 30 30 30;
 }
-input:focus{
-    outline:orchid auto 1px !important;
-}
+
