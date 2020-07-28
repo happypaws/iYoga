@@ -34,7 +34,7 @@ function test_input($inputField){
             header("Location: ../register.php?error=invalidemail"); 
             exit();
         }
-        else if (!preg_match("/^[a-zA-Z0-9]*$/", $username)){   //preg match function - search pattern to check if the 
+        else if (!preg_match("/^[a-zA-Z0-9]*$/", $username)){   //preg match function - search pattern 
             header("Location:  ../register.php?error=invaliduid"); 
             exit();
         }

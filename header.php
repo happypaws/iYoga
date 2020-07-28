@@ -2,7 +2,7 @@
     session_start();                //starting a session on all the pages of the website, to make sure we have a session started on all the pages of the website
     session_regenerate_id(true);    // every time there is a new request, there will be a new session ID generated, thi si sto prevent session hijacking
     
-    echo "<p style='margin: 30 30 30 350;'> Session ID = ".session_id()."</p>"; 
+    //echo "<p style='margin: 30 30 30 350;'> Session ID = ".session_id()."</p>"; 
 ?> 
 
 <main>
