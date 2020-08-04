@@ -13,7 +13,7 @@ function test_inputForm($inputForm){
             $subject = test_inputForm($_POST['subject']);
             $message = test_inputForm($_POST['message']);
     
-            $mailTo = "lena.ovcearenco@gmail.com";
+            $mailTo = "lena.ovcearenco@gmail.com";                //receivers email set as for my personal email
             $headers = "From: ".$mailFrom;
             $txt = "You have received an e-mail from ".$name.".\n\n".$message;
     

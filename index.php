@@ -33,8 +33,7 @@
 
 <!-- About iYoga-->
 
-  <div class="w3-container" id="iyoga" style="margin-top:75px">
-    
+<div class="w3-container" id="iyoga" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-orchid"><b>About iYoga</b></h1>
     <hr style="width:50px;border:5px solid orchid" class="w3-round">
     <p> Welcome to iYoga Studio, a place where you can relax, enjoy every moment of yoga session or meditation,  
@@ -46,7 +45,7 @@
         You can register on our website and get access to some extra content through our Register?login page. 
         We hope to see you soon in out lovely studio.
     </p>
-  </div>
+</div>
 
 <!-- End page content -->
 

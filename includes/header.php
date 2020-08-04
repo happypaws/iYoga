@@ -1,9 +1,8 @@
 <?php
     session_start();                          //starting a session on all the pages of the website, to make sure we have a session started on all the pages of the website
-    session_regenerate_id(true);              // every time there is a new request, there will be a new session ID generated, thi si sto prevent session hijacking
+    session_regenerate_id(true);              // every time there is a new request, there will be a new session ID generated, this is to prevent session hijacking
     setcookie('key', '', time() + 3600, '/', null, true, true);  
     //print_r($_COOKIE); 
-
     //echo "<p style='margin: 30 30 30 350;'> Session ID = ".session_id()."</p>"; 
    ?> 
 
@@ -28,30 +27,29 @@
     <h3 class="w3-padding-64"><b><a href="index.php" style="text-decoration: none;">iYoga</a></b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="index.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#iyoga" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About iYoga</a> 
-    <a href="studio.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Our Studio</a> 
-    <a href="instructors.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Yoga Instructors</a> 
-    <a href="contact.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+      <a href="index.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+      <a href="#iyoga" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About iYoga</a> 
+      <a href="studio.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Our Studio</a> 
+      <a href="instructors.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Yoga Instructors</a> 
+      <a href="contact.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
   
-    <?php 
-     if(isset($_SESSION['admin'])){
-        echo '<a href="post.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Post</a>';  
-        echo '<a href="reg_users.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Registered users</a>';  
-    }
-    if(isset($_SESSION['userUid'])){
-        echo '<a href="blog.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Blog</a>
-            <span class="w3-bar-item w3-button w3-hover-white">Hello '.$_SESSION['userUid'].', 
-            <form action = "includes/logout.inc.php" method = "post">
-            <button type="submit" name = "logout">Logout</button>
-            </form>
-            </a></span>';
-    
-    }else{
-        echo '<a href="register.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Register/Login</a> ';
-    }
-    ?>
-    
+        <?php 
+        if(isset($_SESSION['admin'])){
+            echo '<a href="post.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Post</a>';  
+            echo '<a href="reg_users.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Registered users</a>';  
+        }
+        if(isset($_SESSION['userUid'])){
+            echo '<a href="blog.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Blog</a>
+                <span class="w3-bar-item w3-button w3-hover-white">Hello '.$_SESSION['userUid'].', 
+                <form action = "includes/logout.inc.php" method = "post">
+                <button type="submit" name = "logout">Logout</button>
+                </form>
+                </a></span>';
+        
+        }else{
+            echo '<a href="register.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Register/Login</a> ';
+        }
+        ?>  
   </div>
 </nav>
 

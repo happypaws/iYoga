@@ -15,7 +15,9 @@
         yoga belts and zafus. All yoga equipment sets are color matched, so whenever you are coming to one of our lessons you are free to choose the color
         set you love the most. We ensure that every single class will give you a feeling of warmth, comfort and happiness.</p>
 </div>
+
 <hr style="width:50px;border:5px solid orchid" class="w3-round">
+
 <div>
         <p><h4>Our Studio address is:</h4></p>
         <p><b>12 Bridge Street,</b></p>
@@ -24,6 +26,7 @@
         <p><h4>Contact number:</h4></p>
         <p><b>+3533333333</b></p>
 </div>
+
 <hr style="width:50px;border:5px solid orchid" class="w3-round">
 
 <div>

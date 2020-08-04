@@ -31,7 +31,7 @@
       else {
         header("Location: index.php");
       }
-  ?>
+?>
  
 </body>
 </main>

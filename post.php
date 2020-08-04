@@ -22,7 +22,7 @@
                 echo "Please complete your post";
                 return;
             }
-            
+    
             mysqli_query($conn, $sql);
             header("Location: blog.php");    
         } 
@@ -39,12 +39,12 @@
     <hr style="width:50px;border:5px solid orchid" class="w3-round">
         <form action="post.php" method ="post">
             <div class="w3-section"><label>Title</label>
-              <input class="w3-input w3-border" type="text" name="title" placeholder="post title here" required>
+                <input class="w3-input w3-border" type="text" name="title" placeholder="post title here" required>
             </div>
             <div class="w3-section"><label>Content</label>
-              <textarea class="w3-input w3-border" type="textarea" name="content" placeholder="post content" rows="10" cols="30" required></textarea>
+                <textarea class="w3-input w3-border" type="textarea" name="content" placeholder="post content" rows="10" cols="30" required></textarea>
             </div>
-            <button type="submit" name="post" class="w3-button w3-block w3-padding-large w3-orchid w3-margin-bottom">Post Now</button>
+                <button type="submit" name="post" class="w3-button w3-block w3-padding-large w3-orchid w3-margin-bottom">Post Now</button>
         </form>  
 </div>
 

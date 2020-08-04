@@ -1,4 +1,4 @@
-`<?php
+<?php
  //testing the input for html tags, extra space, or \
  function test_input($inputField){
     $inputField = htmlspecialchars(stripcslashes(strip_tags($inputField)));

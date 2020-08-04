@@ -17,7 +17,6 @@
         </tr>
    
 <?php
-    
     if(isset($_SESSION['admin']) && $_SESSION['admin']= 1){
 
         $sql = "SELECT idUsers, uidUsers, emailUsers, pwdUsers FROM users;"; //quering all the users and all the data about them from users table

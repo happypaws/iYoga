@@ -25,9 +25,9 @@
           } else {
               echo "Sorry, there are no posts!";
             } 
-    }   else {
+    } else {
         header("Location: index.php");
-        }
+    }
 ?>
  
 </body>

@@ -10,6 +10,5 @@
         $sql = "DELETE FROM posts WHERE id=$pid";
         mysqli_query($conn, $sql);
         header("Location: blog.php");
-    }
-        
+    }      
 ?>

@@ -1,8 +1,8 @@
 <?php   //this file is database handler in includes folder
 
-    $servername = "den1.mysql4.gear.host";  //because I am using XAMPP as local server the name of the variable is local server, 
-    $dBUsername = "logindatabase11";                          //when using an external server, the name of that server needs to be added there
-    $dBPassword = "Uq6ftwl4?-97";
+    $servername = "den1.mysql4.gear.host";     //name of the server generated in Gearhost
+    $dBUsername = "logindatabase11";          //username accessing the server generated in Gearhost
+    $dBPassword = "Uq6ftwl4?-97";             //password generated for Gearhost username
     $dBName = "logindatabase11"; //the database name that I created in phpMyAdmin 
 
     //need to run the connection with the database
@@ -12,3 +12,4 @@
     if (!$conn) {
         die("Connection failed: ".mysqli_connect_error());
     }           
+?>

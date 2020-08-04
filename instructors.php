@@ -2,7 +2,7 @@
     require "header.php";
 ?>
 
-<!-- Yoga Instructors -->
+<!-- Yoga Instructors Page -->
 
 <div class="w3-container" id="instructors" style="margin-top:10px">
     <h1 class="w3-xxxlarge w3-text-orchid"><b>Our Instructors</b></h1>

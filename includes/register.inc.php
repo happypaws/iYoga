@@ -24,10 +24,10 @@ function test_input($inputField){
         //checking if one of the fields from the registration form is left empty to display error message to user
         if (empty($username) || empty($email) || empty($password) || empty($passwordRepeat)) {
             header ("Location: ../register.php?error=emptyfields&uid=".$username."&email=".$email);  //if one of the fields is empty after hitting the register button, 
-            exit();                                                                               //the user will be redirected to home page again and all the fields in registration form will be cleared
+            exit();                                                                                  //the user will be redirected to home page again and all the fields in registration form will be cleared
         }
         else if (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-9]*$/", $username)){
-            header("Location: ../register.php?error=invalidemailuid");  //checking a valid email and valid username  not sending any information back to the user, not sending anythign back to the user
+            header("Location: ../register.php?error=invalidemailuid");                                         //checking a valid email and valid username  not sending any information back to the user, not sending anythign back to the user
             exit(); 
         }
         else if (!filter_var($email, FILTER_VALIDATE_EMAIL)){   //checking if the input email is valid
@@ -45,8 +45,8 @@ function test_input($inputField){
         }
         //eror handler if the user is trying to sign up with a username that is already existing in the database
         else { 
-            $sql = "SELECT uidUsers FROM users WHERE uidUsers=?";  //!!! secure feature using prepared statements is a way to run an sql statement inside our database without an attacker trying to destroy our database
-            $stmt = mysqli_stmt_init($conn);                       //creating a prepared statement
+            $sql = "SELECT uidUsers FROM users WHERE uidUsers=?";     //!!! secure feature using prepared statements is a way to run an sql statement inside our database without an attacker trying to destroy our database
+            $stmt = mysqli_stmt_init($conn);                         //creating a prepared statement
             if(!mysqli_stmt_prepare($stmt, $sql)){
                 header("Location: ../register.php?error=sqlerror");
                 exit();
@@ -68,8 +68,8 @@ function test_input($inputField){
                         header("Location: ../register.php?error=sqlerror");
                         exit();
                     } 
-                    else {    //hashing the password using bcrypt - the safest encrypting method, up to date    
-                        $hashedPwd = password_hash($password, PASSWORD_DEFAULT); //bcrypt password hashing, password_hash - is strong hashing alghoritm, salt method is included in password_has function
+                    else {                                                                        //hashing the password using bcrypt - the safest encrypting method, up to date    
+                        $hashedPwd = password_hash($password, PASSWORD_DEFAULT);                 //bcrypt password hashing, password_hash - is strong hashing alghoritm, salt method is included in password_has function
                         mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd);    //!!!we are going to hash the password here, we don't want to have the password available in the database as it is, in case of a hacker attack
                         mysqli_stmt_execute($stmt);                                             //this is why hashing is used, take the password and turn the password to a bunch of different characters
                         header("Location: ../register.php?register=success");
