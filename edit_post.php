@@ -1,7 +1,7 @@
 <?php 
     
     require "header.php";
-    include_once("includes/dbh.inc.php");
+    require("includes/dbh.inc.php");
 
         function test_input($inputField){
             $inputField = htmlspecialchars(stripcslashes(strip_tags($inputField)));
@@ -21,13 +21,13 @@
             
             $sql = "UPDATE posts SET title = '$title', content = '$content', date = '$date' WHERE id=$pid";
            
-            mysqli_query($conn, $sql);
-            header("Location: blog.php");    
-
             if($title == "" || $content == ""){
                 echo "Please complete your post";
                 return;
             }
+            mysqli_query($conn, $sql);
+            header("Location: blog.php");    
+
         }
     ?>
 
