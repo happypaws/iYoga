@@ -1,7 +1,7 @@
 <?php 
     
     require "header.php";
-    require("includes/dbh.inc.php");
+    require ("includes/dbh.inc.php");
 
         function test_input($inputField){
             $inputField = htmlspecialchars(stripcslashes(strip_tags($inputField)));
